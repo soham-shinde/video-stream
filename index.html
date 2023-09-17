@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo.svg" alt="" />
+            Video Stream
+        </div>
+        <ul class="ul-1">
+            <li><a href="/">Home</a></li>
+            <li><a href="moviesList.html">Movies</a>
+                <ul class="sub-list">
+                    <li><a href="">All Movies</a></li>
+                    <li><a href="">Genres</a>
+                        <ul class="sub-list-2">
+                            <li><a href="">Science Fiction</a></li>
+                            <li><a href="">Fantasy</a></li>
+                            <li><a href="">Adventure</a></li>
+                            <li><a href="">Action</a></li>
+                            <li><a href="">Animated</a></li>
+                            <li><a href="">Mystery</a></li>
+                            <li><a href="">Thriller</a></li>
+                            <li><a href="">Horror</a></li>
+                            <li><a href="">Comedy</a></li>
+                            <li><a href="">Drama</a></li>
+                            <li><a href="">Romantic</a></li>
+                            <li><a href="">Biography</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Language</a>
+                        <ul class="sub-list-2">
+                            <li><a href="">Hindi</a></li>
+                            <li><a href="">English</a></li>
+                            <li><a href="">Tamil</a></li>
+                            <li><a href="">Telugu</a></li>
+                            <li><a href="">Malayalam</a></li>
+                            <li><a href="">Kannada</a></li>
+                            <li><a href="">Bengali</a></li>
+                            <li><a href="">Marathi</a></li>
+                            <li><a href="">Punjabi</a></li>
+                            <li><a href="">Gujarati</a></li>
+                            <li><a href="">Korean</a></li>
+                            <li><a href="">Japanese</a></li>
+                            <li><a href="">Spanish</a></li>
+                            <li><a href="">French</a></li>
+                            <li><a href="">Chinese</a></li>
+                            <li><a href="">German</a></li>
+                            <li><a href="">Italian</a></li>
+                            <li><a href="">Portuguese</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="nav-search-bar">
+            <input type="text" class="nav-i" placeholder="Search favorite movie here " name="" id="" />
+        </div>
+        <div class="sd-s">
+            <li><a href=""><img src="img/heart-icon.svg" alt=""></a></li>
+            <li><a href=""><img src="img/user-icon.svg" alt=""></a></li>
+        </div>
+    </nav>
+
+
+    <div class="banner-container">
+        <div class="back-blur">
+            <div class="logo-1">
+                <img src="img/logo.svg" alt="" />
+                Video Stream
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div class="card">
+                        <img class="card-image" src="img/back/back-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img class="card-image" src="img/back/back-2.jpg" alt="">
+
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img class="card-image" src="img/back/back-3.jpg" alt="">
+
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img class="card-image" src="img/back/back-5.jpg" alt="">
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="mo-list">
+            <h4>New Release</h4>
+            <div id="slider-container">
+                <div onclick="scrollLeft1(this)" class="c-btns">
+                    <img src="img/pre-icon.svg" alt="">
+                </div>
+                <div class="slider-parent">
+
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-1.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-2.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-3.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-4.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-5.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-6.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-7.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-17.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="scrollRight(this)" class="c-btns">
+                    <img src="img/next-icon.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="mo-list">
+            <h4>Popular films</h4>
+            <div id="slider-container">
+                <div onclick="scrollLeft1(this)" class="c-btns">
+                    <img src="img/pre-icon.svg" alt="">
+                </div>
+                <div class="slider-parent">
+
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-8.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-9.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-10.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-11.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-12.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-13.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-14.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-15.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-16.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="scrollRight(this)" class="c-btns">
+                    <img src="img/next-icon.svg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="mo-slider">
+            <h2>Most Liked and Watch</h2>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div class="card">
+                        <img class="card-image" src="img/back/back-10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img class="card-image" src="img/back/back-11.jpg" alt="">
+
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img class="card-image" src="img/back/back-9.jpg" alt="">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mo-list">
+            <h4>Popular films</h4>
+            <div id="slider-container">
+                <div onclick="scrollLeft1(this)" class="c-btns">
+                    <img src="img/pre-icon.svg" alt="">
+                </div>
+                <div class="slider-parent">
+
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-8.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-9.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-10.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-11.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-12.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-13.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-14.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-15.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-16.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="scrollRight(this)" class="c-btns">
+                    <img src="img/next-icon.svg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="mo-list">
+            <h4>New Release</h4>
+            <div id="slider-container">
+                <div onclick="scrollLeft1(this)" class="c-btns">
+                    <img src="img/pre-icon.svg" alt="">
+                </div>
+                <div class="slider-parent">
+
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-1.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-2.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-3.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-4.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-5.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-6.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-7.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="m-card">
+                            <div class="m-card-overlay"></div>
+                            <img class="m-card-image" src="/img/card-img/card-17.jpg" alt="">
+                            <div class="m-card-details fadeIn-bottom">
+                                <h3 class="m-card-title">This is a Movie Name</h3>
+                                <p class="m-card-text">This is a short description</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div onclick="scrollRight(this)" class="c-btns">
+                    <img src="img/next-icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="logo-1">
+            <img src="img/logo.svg" alt="" />
+            Video Stream
+        </div>
+        <div class="s-icons">
+            <img class="s-icon" src="img/facebook-round-color-icon.svg" alt="">
+            <img class="s-icon" src="img/instagram-round-color-icon.svg" alt="">
+            <img class="s-icon" src="img/twitter-round-color-icon.svg" alt="">
+            <img class="s-icon" src="img/youtube-round-color-icon.svg" alt="">
+        </div>
+        <div class="c-f-name">
+            &copy; 2023 Video Stream.com . All Rights Reserved.
+
+        </div>
+        <div class="p-t-con">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                padding: 200
+            });
+            autoplay();
+            function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 2000);
+            }
+        });
+    </script>
+</body>
+
+</html>
