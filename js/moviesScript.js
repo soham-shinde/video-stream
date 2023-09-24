@@ -773,12 +773,14 @@ mList.forEach((element) => {
   const newCard = document.createElement("div");
   newCard.classList.add("m-card");
   newCard.innerHTML = `
+   <a href='videoplayer.html'>
     <div class="m-card-overlay"></div>
     <img class="m-card-image" src="https://image.tmdb.org/t/p/w500${element.poster_path}" alt="">
     <div class="m-card-details fadeIn-bottom">
         <h3 class="m-card-title">${element.title}</h3>
         <p class="m-card-text">${element.genres}</p>
     </div>
+    <a>
 `;
 
   // Append the new card to the new slide
