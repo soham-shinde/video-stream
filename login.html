@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/logo.svg">
 </head>
+
 <body>
 
     <nav class="navbar">
@@ -73,56 +75,99 @@
 
     <div class="l-container">
         <div class="main-container">
-        <div class="l-overlay">
-            <div class="l-overlay-inner">
-                <div class="l-icon">
-                    <img src="img/icons/register user icon.svg" alt="">
-                </div>
-                <div class="l-message">
-                    <p id="l-message">Already Signed Up?</p>
-                </div>
-                <div class="l-btn">
-                    <p id= "l-btn">Register</p>
+
+            <div id="l-overlay" class="l-overlay">
+                <div class="l-overlay-inner">
+                    <div class="l-icon">
+                        <img src="img/icons/register user icon.svg" alt="">
+                    </div>
+                    <div class="l-message">
+                        <p id="l-message">Don't have Account?</p>
+                    </div>
+                    <div class="l-btn">
+                        <p id="l-btn">Register</p>
+                    </div>
                 </div>
             </div>
-        </div>
+
             <div class="login-container">
-               <div class="login-inner">
-                <div class="login-title">
-                    <h3>Login</h3>
+                <div class="login-inner">
+                    <div class="login-title">
+                        <h3>Login</h3>
+                    </div>
+                    <div class="form">
+                        <form action="post">
+                            <input class="useremail" type="email" name="" id="">
+                            <input class="userpassword" type="password" name="" id="">
+                            <button class="l-btn" type="submit">
+                                <p>Login</p>
+                            </button>
+                        </form>
+                    </div>
                 </div>
-                <div class="form">
-                    <form action="post">
-                     <input type="email" name="" id="">
-                     <input type="password" name="" id="">
-                     <button type="submit">
-                        <p>Login</p>
-                     </button>
-                    </form>
-                </div>
-            </div>
             </div>
             <div class="login-container">
                 <div class="login-inner">
                     <div class="login-title">
-                        <h3>Register</h3>
+                        <h2>Register</h2>
                     </div>
                     <div class="form">
-                        <form action="post">
-                        <input type="text" name="name" id="">
-                        <input type="text" name="phone" id="">
-                         <input type="email" name="email" id="">
-                         <input type="password" name="password" id="">
-                         <input type="password" name="confirm-password" id="">
-                         <button type="submit">
-                            <p>Sign up</p>
-                         </button>
-                        </form>
+                        
+                            <input placeholder="Username" class="username" type="text" name="name" id="">
+                            <input placeholder="Phone" class="userphone" type="text" name="phone" >
+                            <input placeholder="Email" class="useremail" type="email" name="email" id="">
+                            <input placeholder="password" class="userpassword" type="password" name="password" id="">
+                            <input placeholder="Confirm password" class="userpassword" type="password" name="confirm-password" id="">
+                            <button class="l-btn" type="submit">
+                                <p>Sign up</p>
+                            </button>
+                    
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
+
+    <script>
+        const t_btn = document.querySelector('.l-btn');
+        const t_btn_text = document.getElementById('l-btn');
+       const l_overlay = document.getElementById('l-overlay');
+       const l_message = document.getElementById("l-message");
+        t_btn.addEventListener('click' , ()=>{
+         if(t_btn_text.innerText == "Register"){
+             l_overlay.animate(
+                [
+                    { transform: 'translate(-100%,0)'},
+                
+                ],
+                {
+                    duration: 500,
+                    fill: "forwards",
+                }
+             );
+             t_btn_text.innerText = "Login";
+             l_message.innerText = "Already have Account?";
+
+            }
+            else if(t_btn_text.innerText == "Login"){
+                l_overlay.animate(
+                [
+                    { transform: 'translate(0,0)'},
+                
+                ],
+                {
+                    duration: 500,
+                    fill: "forwards",
+                }
+             );
+             t_btn_text.innerText = "Register";
+             l_message.innerText = "Don't have Account";
+            }
+        });
+   
+    </script>
+
 </body>
+
 </html>
