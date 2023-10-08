@@ -96,9 +96,9 @@
                         <h3>Login</h3>
                     </div>
                     <div class="form">
-                        <form action="post">
-                            <input class="useremail" type="email" name="" id="">
-                            <input class="userpassword" type="password" name="" id="">
+                        <form class="f-container">
+                            <input class="useremail" placeholder="Email id" type="email" name="" id="">
+                            <input class="userpassword" placeholder="Password" type="password" name="" id="">
                             <button class="l-btn" type="submit">
                                 <p>Login</p>
                             </button>
@@ -111,61 +111,61 @@
                     <div class="login-title">
                         <h2>Register</h2>
                     </div>
-                    <div class="form">
-                        
-                            <input placeholder="Username" class="username" type="text" name="name" id="">
-                            <input placeholder="Phone" class="userphone" type="text" name="phone" >
-                            <input placeholder="Email" class="useremail" type="email" name="email" id="">
-                            <input placeholder="password" class="userpassword" type="password" name="password" id="">
-                            <input placeholder="Confirm password" class="userpassword" type="password" name="confirm-password" id="">
-                            <button class="l-btn" type="submit">
-                                <p>Sign up</p>
-                            </button>
-                    
-                    </div>
+                    <form class="f-container">
+                        <input placeholder="Username" class="username" type="text" name="name" id="">
+                        <input placeholder="Phone" class="userphone" type="text" name="phone">
+                        <input placeholder="Email" class="useremail" type="email" name="email" id="">
+                        <input placeholder="Password" class="userpassword" type="password" name="password" id="">
+                        <input placeholder="Confirm Password" class="userpassword" type="password"
+                            name="confirm-password" id="">
+                        <button class="l-btn" type="submit">
+                            <p>Sign up</p>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 
     <script>
         const t_btn = document.querySelector('.l-btn');
         const t_btn_text = document.getElementById('l-btn');
-       const l_overlay = document.getElementById('l-overlay');
-       const l_message = document.getElementById("l-message");
-        t_btn.addEventListener('click' , ()=>{
-         if(t_btn_text.innerText == "Register"){
-             l_overlay.animate(
-                [
-                    { transform: 'translate(-100%,0)'},
-                
-                ],
-                {
-                    duration: 500,
-                    fill: "forwards",
-                }
-             );
-             t_btn_text.innerText = "Login";
-             l_message.innerText = "Already have Account?";
+        const l_overlay = document.getElementById('l-overlay');
+        const l_message = document.getElementById("l-message");
+        t_btn.addEventListener('click', () => {
+            if (t_btn_text.innerText == "Register") {
+                l_overlay.animate(
+                    [
+                        { transform: 'translate(-100%,0)' },
+
+                    ],
+                    {
+                        duration: 500,
+                        fill: "forwards",
+                    }
+                );
+                t_btn_text.innerText = "Login";
+                l_message.innerText = "Already have Account?";
 
             }
-            else if(t_btn_text.innerText == "Login"){
+            else if (t_btn_text.innerText == "Login") {
                 l_overlay.animate(
-                [
-                    { transform: 'translate(0,0)'},
-                
-                ],
-                {
-                    duration: 500,
-                    fill: "forwards",
-                }
-             );
-             t_btn_text.innerText = "Register";
-             l_message.innerText = "Don't have Account";
+                    [
+                        { transform: 'translate(0,0)' },
+
+                    ],
+                    {
+                        duration: 500,
+                        fill: "forwards",
+                    }
+                );
+                t_btn_text.innerText = "Register";
+                l_message.innerText = "Don't have Account";
             }
         });
-   
+
     </script>
 
 </body>
