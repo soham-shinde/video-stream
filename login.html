@@ -126,9 +126,34 @@
             </div>
         </div>
     </div>
+    <div class="dialog-overlay">
+        <div class="dialog-container">
+            <div class="d-body">
+                <div class="g-cards">
+                    <div class="g-card">
+                        <h4>Action</h4>
+                    </div>
+                    <div class="g-card">
+                        <h4>Action</h4>
+                    </div>
+                    <div class="g-card">
+                        <h4>Action</h4>
+                    </div>
+                    <div class="g-card">
+                        <h4>Action</h4>
+                    </div>
+                    <div class="g-card">
+                        <h4>Action</h4>
+                    </div>
+                    <div class="g-card">
+                        <h4>Action</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
-
-
     <script>
         const t_btn = document.querySelector('.l-btn');
         const t_btn_text = document.getElementById('l-btn');
@@ -165,7 +190,32 @@
                 l_message.innerText = "Don't have Account";
             }
         });
-
+        const g_cards = document.querySelector('.g-cards')
+        const gerns = [
+            "Action",
+            "Adventure",
+            "Animated",
+            "Biography",
+            "Comedy",
+            "Drama",
+            "Fantasy",
+            "Horror",
+            "Mystery",
+            "Romantic",
+            "Science Fiction",
+            "Thriller"
+        ]
+        g_cards.innerHTML='';
+        gerns.forEach(element => {
+            const card = document.createElement('div')
+            card.classList.add('g-card');
+            card.style = `background : linear-gradient(0deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 100%), url('/img/genres/${element}.jpg'), lightgray 50% / cover no-repeat;
+            background-size: cover;`;
+    
+            
+            card.innerHTML = `<h4>${element}</h4>`;
+            g_cards.appendChild(card)
+        });
     </script>
 
 </body>
